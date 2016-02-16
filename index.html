@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Forms</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+	
+	<style type="text/css">
+
+		form{
+		}
+		
+		input, select{
+			margin:6px 0px 0px 0px;
+		}
+		
+		p{
+			font-size:14px;
+			font-weight:bold;
+			font-family: Arial;
+		}
+		
+		span{
+			font-size:14px;
+			font-family: Arial;
+			color:red;
+		}
+		
+		.withoutVal{
+			border-color:red;
+		}
+		
+	</style>
+
+</head>
+<body>
+	
+	<form id='userRegistration'>
+		<p>Заполните, пожалуйста, данные для регистрации</p>
+		<input placeholder='Имя' type="text" name="userName"><span class='info'></span></br>
+		<input placeholder='Фамилия' type="text" name="userFname"><span class='info'></span></br>
+		<input placeholder='Логин' type="text" name="userLogin"><span class='info'></span></br>
+		<input placeholder='Адрес эл. почты' type="text" name="eMail"><span class='info'></span></br>
+		<input placeholder='Пароль' type="password" name="userPasswd"><span class='info'></span></br>
+		<input placeholder='Пароль подтверждение' type="password" name="userPasswdConfirm"><span class='info'></span></br>
+		<input placeholder='+38(0ХХ)ХХ-ХХ-ХХ' type="text" name="phoneNumber"><span class='info'></span></br>
+		<input placeholder='День рождения' maxlength='2' type="text" name="dayOfBirth"><span class='info'></span></br>
+		<select>
+			<option>Январь</option>
+			<option>Февраль</option>
+			<option>Март</option>
+			<option>Апрель</option>
+			<option>Май</option>
+			<option>Июнь</option>
+			<option>Июль</option>
+			<option>Август</option>
+			<option>Сентябрь</option>
+			<option>Октябрь</option>
+			<option>Ноябрь</option>
+			<option>Декабрь</option>
+		</select></br>	
+		<input placeholder='Год рождения' maxlength='4' type="text" name="yearOfBirth"><span class='infoBirth'></span></br>	
+		<input type="submit" value="Вход"><span class='infoBirth'></span></br>
+	</form>
+	
+	
+
+</body>
+</html>
